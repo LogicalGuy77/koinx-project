@@ -1,4 +1,5 @@
 import TradingViewWidget from "./TradingViewWidget";
+import BTCHeader from "./BTCHeader";
 
 function BTCGraph() {
   return (
@@ -11,7 +12,8 @@ function BTCGraph() {
         <div>Bitcoin</div>
       </div>
       <div className="flex flex-col md:flex-row">
-        <div className="flex-1">
+        <div className="flex-1 bg-white p-4 rounded-lg shadow-md">
+          <BTCHeader />
           <TradingViewWidget />
         </div>
         <div className="flex-1 md:pl-5 mt-4 md:mt-0">
