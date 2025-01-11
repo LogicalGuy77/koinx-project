@@ -1,10 +1,9 @@
 import BTCGraph from "./BitcoinComponent/BTCGraph";
-import TradingViewWidget from "./BitcoinComponent/TradingViewWidget";
+
 function Background() {
   return (
-    <div className=" bg-[#DEDFE2] ">
+    <div className=" bg-[#DEDFE2] pl-8 pt-4 pr-8 pb-8">
       <BTCGraph />
-      <TradingViewWidget />
     </div>
   );
 }

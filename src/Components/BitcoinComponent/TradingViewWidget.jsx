@@ -1,7 +1,9 @@
 import { useEffect, useRef, memo } from "react";
+import { useMediaQuery } from "react-responsive";
 
 function TradingViewWidget() {
   const container = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   useEffect(() => {
     // Check if the script already exists
@@ -14,8 +16,8 @@ function TradingViewWidget() {
       script.async = true;
       script.innerHTML = `
         {
-          "width": "980",
-          "height": "610",
+          "width": "${isMobile ? "100%" : "980"}",
+          "height": "${isMobile ? "400" : "610"}",
           "symbol": "BITSTAMP:BTCUSD",
           "timezone": "Asia/Kolkata",
           "theme": "light",
@@ -40,10 +42,14 @@ function TradingViewWidget() {
         script.remove();
       }
     };
-  }, []);
+  }, [isMobile]);
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div
+      className="tradingview-widget-container"
+      ref={container}
+      style={{ height: isMobile ? "400px" : "610px", width: "100%" }}
+    >
       <div className="tradingview-widget-container__widget"></div>
     </div>
   );
