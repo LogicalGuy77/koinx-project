@@ -2,6 +2,8 @@ import { useState } from "react";
 import Overview from "./Overview";
 import Sentiment from "./Sentiment";
 import AboutCoin from "./AboutCoin";
+import Tokenomics from "./Tokenomics";
+import Team from "./Team";
 
 function DetailsComponent() {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -26,6 +28,12 @@ function DetailsComponent() {
       </div>
       <div className="bg-white rounded-lg shadow-md p-6 w-full md:w-auto">
         <AboutCoin />
+      </div>
+      <div className="bg-white rounded-lg shadow-md p-6 w-full md:w-auto">
+        <Tokenomics />
+      </div>
+      <div className="bg-white rounded-lg shadow-md p-6 w-full md:w-auto">
+        <Team />
       </div>
     </div>
   );
