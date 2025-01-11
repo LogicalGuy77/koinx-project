@@ -9,7 +9,9 @@ const Navbar = () => {
     <ul className="hidden md:flex space-x-8 text-gray-700 font-semibold font-sans">
       <li>
         <a
-          href="#home"
+          href="https://app.koinx.com/calculate-tax"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-blue-800 transition-colors duration-200"
         >
           Crypto Taxes
@@ -17,7 +19,9 @@ const Navbar = () => {
       </li>
       <li>
         <a
-          href="#about"
+          href="https://www.koinx.com/blog"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-blue-800 transition-colors duration-200"
         >
           Free Tools
@@ -25,7 +29,9 @@ const Navbar = () => {
       </li>
       <li>
         <a
-          href="#services"
+          href="https://www.koinx.com/integrations"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-blue-800 transition-colors duration-200"
         >
           Resource Center
