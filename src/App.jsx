@@ -1,4 +1,5 @@
 import "./App.css";
+import DetailsComponent from "./Components/DetailsComponent";
 import GraphComponent from "./Components/GraphComponent";
 import Navbar from "./Components/Navbar";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <GraphComponent />
+      <DetailsComponent />
     </>
   );
 }
