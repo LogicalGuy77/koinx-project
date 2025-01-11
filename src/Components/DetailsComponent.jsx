@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Overview from "./Overview";
+import Sentiment from "./Sentiment";
 
 function DetailsComponent() {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -18,6 +19,9 @@ function DetailsComponent() {
     <div className="space-y-4 pt-6">
       <div className="bg-white rounded-lg shadow-md p-6 w-full md:w-auto">
         <Overview />
+      </div>
+      <div className="bg-white rounded-lg shadow-md p-6 w-full md:w-auto">
+        <Sentiment />
       </div>
     </div>
   );
