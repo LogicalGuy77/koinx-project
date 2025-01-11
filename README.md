@@ -50,7 +50,7 @@ Add environment variables
 
 Run development server
 ```npm run dev```
-
+```
 src/
 ├── components/
 │   ├── BitcoinComponent/
@@ -66,6 +66,7 @@ src/
 │   ├── Tokenomics.jsx
 │   └── YouMayLike.jsx
 └── App.jsx
+```
 
 #### Learning Outcomes
 * Advanced React component patterns
