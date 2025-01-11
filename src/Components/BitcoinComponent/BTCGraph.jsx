@@ -1,5 +1,6 @@
 import TradingViewWidget from "./TradingViewWidget";
 import BTCHeader from "./BTCHeader";
+import TrendingCoins from "../TrendingCoins";
 
 function BTCGraph() {
   return (
@@ -16,12 +17,15 @@ function BTCGraph() {
           <BTCHeader />
           <TradingViewWidget />
         </div>
-        <div className="flex-1 md:pl-5 mt-4 md:mt-0">
+        <div className="flex flex-col flex-1 md:pl-5 mt-4 md:mt-0">
           <img
             src="./getstarted.png"
             alt="getstarted"
-            className="w-full md:w-auto"
+            className="w-full md:w-auto mb-4"
           />
+          <div className="w-full">
+            <TrendingCoins />
+          </div>
         </div>
       </div>
     </>
