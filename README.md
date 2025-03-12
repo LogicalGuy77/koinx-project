@@ -76,5 +76,4 @@ src/
 #### Future Improvements
 * Implement caching for API calls
 * Add more cryptocurrency options
-* Enhance mobile UX
 * Add dark mode support
